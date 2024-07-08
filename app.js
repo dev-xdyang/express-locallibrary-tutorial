@@ -9,6 +9,22 @@ var usersRouter = require('./routes/users');
 
 var app = express();
 
+// set up mongoose connection
+// ouyangzhengxuan uBhsb1uvdsNX4KAZ
+// xdyang m6QT3XDs5hax
+// mongodb+srv://xdyang:m6QT3XDs5hax@cluster0.zllplnp.mongodb.net/local_library?retryWrites=true&w=majority&appName=Cluster0
+
+const mongoose = require("mongoose")
+mongoose.set("strictQuery", false);
+const mongoDB = "mongodb+srv://xdyang:m6QT3XDs5hax@cluster0.zllplnp.mongodb.net/local_library?retryWrites=true&w=majority&appName=Cluster0";
+main().catch((err) => {
+  console.log("MongoDB connect error:")
+  console.log(err)
+});
+async function main() {
+  await mongoose.connect(mongoDB);
+}
+
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'jade');
