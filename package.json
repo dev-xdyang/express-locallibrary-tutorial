@@ -5,7 +5,8 @@
   "scripts": {
     "start": "node ./bin/www",
     "devstart": "nodemon ./bin/www",
-    "serverstart": "DEBUG=express-locallibrary-tutorial:* npm run devstart"
+    "serverstart": "DEBUG=express-locallibrary-tutorial:* npm run devstart",
+    "populate": "node populatedb.js \"mongodb+srv://xdyang:m6QT3XDs5hax@cluster0.zllplnp.mongodb.net/local_library?retryWrites=true&w=majority&appName=Cluster0\""
   },
   "dependencies": {
     "cookie-parser": "^1.4.6",
