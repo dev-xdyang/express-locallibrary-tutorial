@@ -9,13 +9,14 @@
     "populate": "node populatedb.js \"mongodb+srv://xdyang:m6QT3XDs5hax@cluster0.zllplnp.mongodb.net/local_library?retryWrites=true&w=majority&appName=Cluster0\""
   },
   "dependencies": {
-    "cookie-parser": "^1.4.6",
-    "debug": "^4.3.5",
-    "express": "^4.19.2",
-    "http-errors": "~2.0.0",
-    "jade": "^1.11.0",
+    "cookie-parser": "~1.4.4",
+    "debug": "~2.6.9",
+    "express": "~4.16.1",
+    "express-async-handler": "^1.2.0",
+    "http-errors": "~1.6.3",
     "mongoose": "^8.4.5",
-    "morgan": "~1.9.1"
+    "morgan": "~1.9.1",
+    "pug": "2.0.0-beta11"
   },
   "devDependencies": {
     "nodemon": "^3.1.4"
